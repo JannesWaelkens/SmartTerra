@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/nmct_logo.png">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/nmct_logo.png">
+  <title>SmartTerra</title>
+  <link rel="stylesheet" href="css/screen.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+    integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
+</head>
+
+<body>
+  <div class="o-row--neutral-xx-dark">
+    <header class="o-row">
+      <div class="o-container">
+        <div class="c-header">
+          <div class="c-header__logo">
+            SmartTerra
+          </div>
+          <div class="c-header__nav">
+            <nav class="c-nav">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                <li class="c-nav__item"><a href="eten.html" class="c-nav__link">Eten</a></li>
+                <li class="c-nav__item"><a href="deur.html" class="c-nav__link">Deur</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+
+  </div>
+  <div class="o-container o-layout--justify-space-between ">
+    <div class="o-body u-1-of-4-bp4">
+      <div class="o-body--title">
+        LAMPEN
+      </div>
+      <div class="o-body__content--lampen">
+
+        <div class="o-body__content--lampen-uv">
+          <p>UV</p>
+          <img src="img/uvlamp_on.svg" alt="UV aan">
+        </div>
+
+        <div class="o-body__content--lampen-warmte">
+          <p>WARMTE</p>
+          <img src="img/heatlamp_on.svg" alt="warmtelamp aan">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="o-body u-1-of-4-bp4">
+      <div class="o-body--title">
+        TEMPERATUUR
+      </div>
+
+      <div class="o-body__content--temperatuur">
+        <div class="o-body__content--temperatuur-text">
+          Links
+          <div class="o-body__content--temperatuur-svg">
+            <img src="img/thermometer.svg" alt="thermometer">
+          </div>
+          <p class="o-body__content--temperatuur-graden" id="temperatuur_links">
+            loading
+          </p>
+        </div>
+        <div class="o-body__content--temperatuur-text">
+          Steen
+          <div class="o-body__content--temperatuur-svg">
+            <img src="img/thermometer.svg" alt="thermometer">
+          </div>
+          <p class="o-body__content--temperatuur-graden" id="temperatuur_steen">
+            loading
+          </p>
+        </div>
+
+        <div class="o-body__content--temperatuur-text">
+          Rechts
+          <div class="o-body__content--temperatuur-svg">
+            <img src="img/thermometer.svg" alt="thermometer">
+          </div>
+          <p class="o-body__content--temperatuur-graden" id="temperatuur_rechts">
+            loading
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="o-body  u-1-of-4-bp4">
+      <div class="o-body--title">
+        DEUR
+      </div>
+      <div class="o-body__content--deur-lock" id="deurcontact">
+        <img src="img/baseline-lock_open-24px.svg" alt="slot open">
+      </div>
+      <a href="deur.html"> <button class="o-body__content--deur-buttonname o-body__content--deur-button">
+          History</button> </a>
+    </div>
+
+    <div class="o-body u-1-of-4-bp4">
+      <div class="o-body--title">
+        BELONING
+      </div>
+      <div class="o-body__content--beloning" id="beloningen">loading</div>
+      <button class="o-body__content--beloning-buttonname o-body__content--beloning-button"> Geef beloning</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

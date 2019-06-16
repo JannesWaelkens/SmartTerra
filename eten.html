@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/nmct_logo.png">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SmartTerra</title>
+  <link rel="stylesheet" href="css/screen.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+    integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="bower_components/heatcanvas/heatcanvas.js"></script>
+  <script src="script/script_eten.js"></script>
+</head>
+
+<body>
+  <div class="o-row--neutral-xx-dark">
+    <header class="o-row">
+      <div class="o-container">
+
+        <div class="c-header">
+          <div class="c-header__logo">
+            SmartTerra
+          </div>
+          <div class="c-header__nav">
+            <nav class="c-nav">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                <li class="c-nav__item"><a href="eten.html" class="c-nav__link">Eten</a></li>
+                <li class="c-nav__item"><a href="deur.html" class="c-nav__link">Deur</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  </div>
+  </header>
+  <div class="o-tabel">
+    <table>
+      <tr class="o-tabel--title">
+        <th class="o-tabel--dag">Dag</th>
+        <th class="o-tabel--beschrijving">Beschrijving</th>
+        <th class="o-tabel--aanpassen"></th>
+      </tr>
+  </div>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left-first"> <b>Maandag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left-first" id='beschrijving'>loading</td>
+
+
+    <td class="o-tabel--center-first o-tabel--aanpassen" id="aanpassen">
+
+        <img src="img/baseline-create-24px.svg" alt="aanpassen">
+
+    </td>
+
+  </tr>
+
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Dinsdag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Woensdag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Donderdag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Vrijdag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Zaterdag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+  <tr class="o-tabel--content">
+    <td class="o-tabel--dag o-tabel--left"> <b>Zondag</b></th>
+    <td class="o-tabel--beschrijving o-tabel--left" id="beschrijving">loading</td>
+
+
+    <td class="o-tabel--center o-tabel--aanpassen" id="aanpassen">
+      <img src="img/baseline-create-24px.svg" alt="aanpassen">
+    </td>
+  </tr>
+
+
+
+
+  </table>
+</body>
+
+</html>
